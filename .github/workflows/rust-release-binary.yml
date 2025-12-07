@@ -29,7 +29,8 @@ jobs:
         with:
           executable-name: binwalk
           target: ${{ matrix.platform.target }}
-          release-tag-prefix: v        
+          release-tag-prefix: v      
+          changes-file: ""  
           action-gh-release-parameters: |
             {
               "draft": false,
